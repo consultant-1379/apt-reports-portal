@@ -1,0 +1,67 @@
+/////////////////////////////////////
+// Grid - Flexgrid
+/////////////////////////////////////
+
+.grid-builder(@num, @border) {
+  max-width: 100% * (@num / 12);
+  & when (@border = 1) {
+    border-right: 3px solid transparent;
+  }
+  & when (@border = 0) {
+    border-right: 0;
+  }
+}
+
+/* Grid */
+.row {
+  display: flex;
+  flex-flow: row wrap;
+
+  &.h-center {
+    justify-content: center;
+  }
+
+  &.v-center {
+    align-content: center;
+  }
+
+  .column, .tile {
+    flex-basis: 100%;
+    margin-bottom: 3px;
+    background-clip: padding-box;
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    &.has-nested {
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+  }
+
+  .sm-1 { .grid-builder(1, 1); }
+
+  .sm-2 { .grid-builder(2, 1); }
+
+  .sm-3 { .grid-builder(3, 1); }
+
+  .sm-4 { .grid-builder(4, 1); }
+
+  .sm-5 { .grid-builder(5, 1); }
+
+  .sm-6 { .grid-builder(6, 1); }
+
+  .sm-7 { .grid-builder(7, 1); }
+
+  .sm-8 { .grid-builder(8, 1); }
+
+  .sm-9 { .grid-builder(9, 1); }
+
+  .sm-10 { .grid-builder(10, 1); }
+
+  .sm-11 { .grid-builder(11, 1); }
+
+  .sm-12 { .grid-builder(12, 0); }
+}

@@ -1,0 +1,27 @@
+/////////////////////////////////////
+// Datepicker
+/////////////////////////////////////
+@import (reference, multiple) "../font/icon-names";
+
+.datepicker {
+  position: relative;
+
+  .input-group {
+    margin-bottom: 0;
+  }
+
+  .calendar {
+    margin-top: 2px;
+  }
+
+  .btn {
+    min-width: 24px;
+    height: 28px;
+
+    &::after {
+      content: @icon-calendar;
+      font-size: 16px;
+      font-family: "Ericsson Icons" !important;
+    }
+  }
+}

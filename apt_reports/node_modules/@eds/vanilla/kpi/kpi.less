@@ -1,0 +1,21 @@
+/////////////////////////////////////
+// KPIs
+/////////////////////////////////////
+@import (reference, multiple) "../variables/global";
+
+.kpi {
+  width: fit-content;
+  padding-bottom: @space-base;
+
+  .item {
+    display: inline-block;
+    padding-right: @space-small;
+  }
+
+  &.action, .action {
+    &:hover {
+      color: @link-blue !important;
+      cursor: pointer;
+    }
+  }
+}

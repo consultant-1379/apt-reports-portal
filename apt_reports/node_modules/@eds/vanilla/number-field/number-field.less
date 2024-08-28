@@ -1,0 +1,56 @@
+/////////////////////////////////////
+// Number fields
+/////////////////////////////////////
+
+input[type="number"] {
+  width: 50px;
+  -moz-appearance: textfield;
+
+  &.editable {
+    border-color: transparent;
+    background: transparent;
+
+    &:hover {
+      border-color: @input-border;
+      background: @input-background;
+    }
+
+    &:focus {
+      border-color: @blue;
+    }
+  }
+}
+
+.spinner {
+  user-select: none;
+
+  .controls {
+    display: inline;
+    margin-left: -2px;
+  }
+
+  .icon {
+    padding: 6px;
+    margin: -6px 1px;
+    border: solid 1px @input-border;
+    border-radius: 3px;
+
+    &:hover {
+      color: @btn-default-text;
+      text-decoration: none;
+      background: @btn-default;
+      border: 1px solid @btn-default;
+      cursor: pointer;
+    }
+
+    &.disabled {
+      opacity: .3;
+
+      &:hover {
+        background: white;
+        border: solid 1px @input-border;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+/////////////////////////////////////
+// Progress-bar
+/////////////////////////////////////
+@import (reference, multiple) "../variables/global";
+
+@progress-bar-height: 8px;
+@progress-bar-height-thin: 4px;
+
+.progress-bar, .progressbar {
+  label {
+    display: block;
+
+    .icon {
+      margin-right: @space-small;
+    }
+  }
+
+  progress, meter {
+    // Remove the default style
+    appearance: none;
+    width: ~"calc(100% - 44px)";
+    height: @progress-bar-height;
+    border: none;
+    vertical-align: middle;
+    background-color: @progress-bar-background;
+    transition: all .2s ease-in-out;
+
+    &::-webkit-progress-value {
+      background-color: @progress-bar-value;
+      transition: all .2s ease-in-out;
+      height: @progress-bar-height;
+      width: 100%;
+    }
+
+    &::-webkit-progress-bar {
+      background-color: @progress-bar-background;
+    }
+
+    &::-moz-progress-bar {
+      background-color: @progress-bar-value;
+      transition: all .2s ease-in-out;
+    }
+
+    // indeterminate
+    &:not([value]) {
+      background: @progress-bar-background;
+      animation: indeterminateAnimation 1s infinite ease-in-out 1s;
+      transform-origin: 0 0;
+
+      &::-webkit-progress-bar {
+        background: @progress-bar-background;
+      }
+
+      &::-moz-progress-bar {
+        background: @progress-bar-background;
+      }
+
+      @keyframes indeterminateAnimation {
+        0% {
+          transform: translateX(0) scaleX(0);
+        }
+
+        40% {
+          transform: translateX(0) scaleX(1);
+        }
+
+        100% {
+          transform: translateX(100%) scaleX(0);
+        }
+      }
+    }
+
+    &.buffer {
+      margin-bottom: -34px;
+      opacity: .3;
+    }
+  }
+
+  progress + span {
+    margin-left: @space-small;
+  }
+
+  // Colors
+  &.blue {
+    progress::-webkit-progress-value { background-color: @blue; }
+    progress::-moz-progress-bar { background-color: @blue; }
+  }
+
+  &.red {
+    progress::-webkit-progress-value { background-color: @red; }
+    progress::-moz-progress-bar { background-color: @red; }
+  }
+
+  &.thin {
+    progress {
+      height: @progress-bar-height-thin;
+
+      &::-webkit-progress-value {
+        height: @progress-bar-height-thin;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.available_dates {
+  list-style-type: none;
+}
+
+.available_dates li {
+  padding: 1em !important;
+  margin-bottom: 14px;
+}
+
+.available_dates a {
+  background-color: #0074D9;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.available_dates a:hover {
+  background-color: #001f3f;
+  cursor: pointer;
+}
+
+.available_dates a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.row {
+  height:100%
+}

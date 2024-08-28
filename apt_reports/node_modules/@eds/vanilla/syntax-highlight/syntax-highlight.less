@@ -1,0 +1,186 @@
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: @prism-text;
+  background: none;
+  font-family: "Ericsson Hilda Mono", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  letter-spacing: .5px;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+
+  &::-moz-selection,
+  &::selection {
+    background: @prism-select;
+  }
+
+  &:empty {
+    display: none;
+  }
+}
+
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0;
+  overflow: auto;
+  border: solid 1px @prism-box-border;
+
+  &.no-border-bottom {
+    border-bottom: 0;
+  }
+
+  &.no-border-top {
+    border-top: 0;
+  }
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: @prism-background;
+  //TODO: @juangreco scrolling on code snippet (horizontally), is bugged on chrome
+  overflow: auto;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+
+.token.comment {
+  color: @prism-text-comment;
+}
+
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: @prism-text-token;
+}
+
+.token.punctuation {
+  color: @prism-text-punctuation;
+}
+
+.token.selector,
+.token.tag {
+  color: @prism-text-tag;
+}
+
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted {
+  color: @prism-text-attr;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.builtin,
+.token.inserted {
+  color: @prism-text-insert;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: @prism-text-string;
+}
+
+.token.atrule,
+.token.keyword {
+  color: @prism-text-keyword;
+}
+
+.token.function {
+  color: @prism-text-function;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: @prism-text-insert;
+}
+
+.token.important,
+.token.bold {
+  font-weight: @weight-bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+  position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+
+  &::before {
+    content: counter(linenumber);
+    color: @prism-line-number;
+    opacity: .3;
+    display: block;
+    padding-right: .8em;
+    text-align: right;
+  }
+}
+
+.line-numbers-rows.command > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+
+  &::before {
+    content: "$";
+    color: @prism-line-number;
+    opacity: .3;
+    display: block;
+    padding-right: .8em;
+    text-align: right;
+  }
+}

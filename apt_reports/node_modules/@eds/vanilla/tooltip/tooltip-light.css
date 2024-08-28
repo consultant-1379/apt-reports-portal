@@ -1,0 +1,772 @@
+@font-face {
+  font-family: "Ericsson Icons";
+  src: url("./icons/ericsson-icons.eot?mvqo1v");
+  src: url("./icons/ericsson-icons.eot?mvqo1v#iefix") format("embedded-opentype"), url("./icons/ericsson-icons.ttf?mvqo1v") format("truetype"), url("./icons/ericsson-icons.woff?mvqo1v") format("woff"), url("./icons/ericsson-icons.svg?mvqo1v#ericsson-icons") format("svg");
+  font-style: normal;
+}
+.icon-abs-brakes::before {
+  content: "\e900";
+}
+.icon-airbag::before {
+  content: "\e901";
+}
+.icon-alarm-level1::before {
+  content: "\e902";
+}
+.icon-alarm-level2::before {
+  content: "\e903";
+}
+.icon-alarm-level3::before {
+  content: "\e904";
+}
+.icon-alarm-level4::before {
+  content: "\e905";
+}
+.icon-alarm-level5::before {
+  content: "\e906";
+}
+.icon-alarm-level6::before {
+  content: "\e907";
+}
+.icon-antenna::before {
+  content: "\e908";
+}
+.icon-app-launcher::before {
+  content: "\e909";
+}
+.icon-arrow-down::before {
+  content: "\e90a";
+}
+.icon-arrow-left::before {
+  content: "\e90b";
+}
+.icon-arrow-right::before {
+  content: "\e90c";
+}
+.icon-arrow-up::before {
+  content: "\e90d";
+}
+.icon-attach::before {
+  content: "\e90e";
+}
+.icon-automotive-battery::before {
+  content: "\e90f";
+}
+.icon-avatar::before {
+  content: "\e910";
+}
+.icon-battery-charging::before {
+  content: "\e911";
+}
+.icon-battery-empty::before {
+  content: "\e912";
+}
+.icon-battery-full::before {
+  content: "\e913";
+}
+.icon-blog::before {
+  content: "\e914";
+}
+.icon-bluetooth::before {
+  content: "\e915";
+}
+.icon-bookmark-solid::before {
+  content: "\e916";
+}
+.icon-bookmark::before {
+  content: "\e917";
+}
+.icon-brakes::before {
+  content: "\e918";
+}
+.icon-bug::before {
+  content: "\e919";
+}
+.icon-calendar::before {
+  content: "\e91a";
+}
+.icon-camera-cctv::before {
+  content: "\e91b";
+}
+.icon-camera-classic::before {
+  content: "\e91c";
+}
+.icon-camera-photo::before {
+  content: "\e91d";
+}
+.icon-check-small::before {
+  content: "\e91e";
+}
+.icon-check::before {
+  content: "\e91f";
+}
+.icon-chevron-down::before {
+  content: "\e920";
+}
+.icon-chevron-left::before {
+  content: "\e921";
+}
+.icon-chevron-right::before {
+  content: "\e922";
+}
+.icon-chevron-up::before {
+  content: "\e923";
+}
+.icon-circle-dashed::before {
+  content: "\e924";
+}
+.icon-circle::before {
+  content: "\e925";
+}
+.icon-cloud::before {
+  content: "\e926";
+}
+.icon-code::before {
+  content: "\e927";
+}
+.icon-copy::before {
+  content: "\e928";
+}
+.icon-cpu::before {
+  content: "\e929";
+}
+.icon-creditcard::before {
+  content: "\e92a";
+}
+.icon-crop::before {
+  content: "\e92b";
+}
+.icon-cross-small::before {
+  content: "\e92c";
+}
+.icon-cross::before {
+  content: "\e92d";
+}
+.icon-crown::before {
+  content: "\e92e";
+}
+.icon-dashboard::before {
+  content: "\e92f";
+}
+.icon-dial::before {
+  content: "\e930";
+}
+.icon-diamond::before {
+  content: "\e931";
+}
+.icon-document::before {
+  content: "\e932";
+}
+.icon-door::before {
+  content: "\e933";
+}
+.icon-download-save::before {
+  content: "\e934";
+}
+.icon-drag-handle::before {
+  content: "\e935";
+}
+.icon-duplicate::before {
+  content: "\e936";
+}
+.icon-econ::before {
+  content: "\e937";
+}
+.icon-edit::before {
+  content: "\e938";
+}
+.icon-email::before {
+  content: "\e939";
+}
+.icon-engine::before {
+  content: "\e93a";
+}
+.icon-eraser::before {
+  content: "\e93b";
+}
+.icon-eula::before {
+  content: "\e93c";
+}
+.icon-eye-solid::before {
+  content: "\e93d";
+}
+.icon-eye::before {
+  content: "\e93e";
+}
+.icon-favorite-solid::before {
+  content: "\e93f";
+}
+.icon-favorite::before {
+  content: "\e940";
+}
+.icon-fika::before {
+  content: "\e941";
+}
+.icon-file::before {
+  content: "\e942";
+}
+.icon-filter::before {
+  content: "\e943";
+}
+.icon-floor::before {
+  content: "\e944";
+}
+.icon-flow::before {
+  content: "\e945";
+}
+.icon-folder::before {
+  content: "\e946";
+}
+.icon-fuel::before {
+  content: "\e947";
+}
+.icon-globe::before {
+  content: "\e948";
+}
+.icon-graph-circle::before {
+  content: "\e949";
+}
+.icon-graph-line::before {
+  content: "\e94a";
+}
+.icon-graph-plot::before {
+  content: "\e94b";
+}
+.icon-group::before {
+  content: "\e94c";
+}
+.icon-heart-solid::before {
+  content: "\e94d";
+}
+.icon-heart::before {
+  content: "\e94e";
+}
+.icon-heatmap::before {
+  content: "\e94f";
+}
+.icon-help::before {
+  content: "\e950";
+}
+.icon-home::before {
+  content: "\e951";
+}
+.icon-image::before {
+  content: "\e952";
+}
+.icon-info::before {
+  content: "\e953";
+}
+.icon-invoice::before {
+  content: "\e954";
+}
+.icon-language::before {
+  content: "\e955";
+}
+.icon-launch::before {
+  content: "\e956";
+}
+.icon-layers::before {
+  content: "\e957";
+}
+.icon-lightbulb::before {
+  content: "\e958";
+}
+.icon-link::before {
+  content: "\e959";
+}
+.icon-lock-locked::before {
+  content: "\e95a";
+}
+.icon-lock-unlocked::before {
+  content: "\e95b";
+}
+.icon-logout::before {
+  content: "\e95c";
+}
+.icon-loudspeaker::before {
+  content: "\e95d";
+}
+.icon-magnet::before {
+  content: "\e95e";
+}
+.icon-manual::before {
+  content: "\e95f";
+}
+.icon-map::before {
+  content: "\e960";
+}
+.icon-maximize::before {
+  content: "\e961";
+}
+.icon-medal::before {
+  content: "\e962";
+}
+.icon-message-contact-us::before {
+  content: "\e963";
+}
+.icon-message-double::before {
+  content: "\e964";
+}
+.icon-message-single::before {
+  content: "\e965";
+}
+.icon-message-smiley::before {
+  content: "\e966";
+}
+.icon-mic-off::before {
+  content: "\e967";
+}
+.icon-mic::before {
+  content: "\e968";
+}
+.icon-minimize::before {
+  content: "\e969";
+}
+.icon-minus-small::before {
+  content: "\e96a";
+}
+.icon-minus::before {
+  content: "\e96b";
+}
+.icon-money::before {
+  content: "\e96c";
+}
+.icon-more::before {
+  content: "\e96d";
+}
+.icon-nav::before {
+  content: "\e96e";
+}
+.icon-network::before {
+  content: "\e96f";
+}
+.icon-node::before {
+  content: "\e970";
+}
+.icon-notification-ring::before {
+  content: "\e971";
+}
+.icon-notification::before {
+  content: "\e972";
+}
+.icon-oil::before {
+  content: "\e973";
+}
+.icon-options::before {
+  content: "\e974";
+}
+.icon-phone-classic::before {
+  content: "\e975";
+}
+.icon-phone-cobra::before {
+  content: "\e976";
+}
+.icon-phone-hangup::before {
+  content: "\e977";
+}
+.icon-pin::before {
+  content: "\e978";
+}
+.icon-plus-small::before {
+  content: "\e979";
+}
+.icon-plus::before {
+  content: "\e97a";
+}
+.icon-polygon-dashed::before {
+  content: "\e97b";
+}
+.icon-polygon::before {
+  content: "\e97c";
+}
+.icon-position::before {
+  content: "\e97d";
+}
+.icon-profile::before {
+  content: "\e97e";
+}
+.icon-projects::before {
+  content: "\e97f";
+}
+.icon-redo::before {
+  content: "\e980";
+}
+.icon-reload::before {
+  content: "\e981";
+}
+.icon-resize-down::before {
+  content: "\e982";
+}
+.icon-resize-up::before {
+  content: "\e983";
+}
+.icon-restore::before {
+  content: "\e984";
+}
+.icon-room::before {
+  content: "\e985";
+}
+.icon-routing::before {
+  content: "\e986";
+}
+.icon-rss::before {
+  content: "\e987";
+}
+.icon-ruler::before {
+  content: "\e988";
+}
+.icon-scan::before {
+  content: "\e989";
+}
+.icon-search::before {
+  content: "\e98a";
+}
+.icon-send::before {
+  content: "\e98b";
+}
+.icon-server::before {
+  content: "\e98c";
+}
+.icon-settings::before {
+  content: "\e98d";
+}
+.icon-severity-cleared::before {
+  content: "\e98e";
+}
+.icon-severity-critical::before {
+  content: "\e98f";
+}
+.icon-severity-indeterminate::before {
+  content: "\e990";
+}
+.icon-severity-major::before {
+  content: "\e991";
+}
+.icon-severity-minor::before {
+  content: "\e992";
+}
+.icon-severity-warning::before {
+  content: "\e993";
+}
+.icon-shapes::before {
+  content: "\e994";
+}
+.icon-share::before {
+  content: "\e995";
+}
+.icon-shopping-cart::before {
+  content: "\e996";
+}
+.icon-sidemenu-left-close::before {
+  content: "\e997";
+}
+.icon-sidemenu-left-open::before {
+  content: "\e998";
+}
+.icon-sidemenu-right-close::before {
+  content: "\e999";
+}
+.icon-sidemenu-right-open::before {
+  content: "\e99a";
+}
+.icon-signal::before {
+  content: "\e99b";
+}
+.icon-simcard::before {
+  content: "\e99c";
+}
+.icon-sort-down::before {
+  content: "\e99d";
+}
+.icon-sort-up::before {
+  content: "\e99e";
+}
+.icon-sorting::before {
+  content: "\e99f";
+}
+.icon-square-dashed::before {
+  content: "\e9a0";
+}
+.icon-square::before {
+  content: "\e9a1";
+}
+.icon-stroke-curved::before {
+  content: "\e9a2";
+}
+.icon-stroke-dashed::before {
+  content: "\e9a3";
+}
+.icon-stroke-straight::before {
+  content: "\e9a4";
+}
+.icon-table::before {
+  content: "\e9a5";
+}
+.icon-tasks::before {
+  content: "\e9a6";
+}
+.icon-terminal::before {
+  content: "\e9a7";
+}
+.icon-time::before {
+  content: "\e9a8";
+}
+.icon-traffic-lights::before {
+  content: "\e9a9";
+}
+.icon-trashcan::before {
+  content: "\e9aa";
+}
+.icon-triangle-dashed::before {
+  content: "\e9ab";
+}
+.icon-triangle-warning::before {
+  content: "\e9ac";
+}
+.icon-triangle::before {
+  content: "\e9ad";
+}
+.icon-trophy::before {
+  content: "\e9ae";
+}
+.icon-trowel::before {
+  content: "\e9af";
+}
+.icon-truck::before {
+  content: "\e9b0";
+}
+.icon-undo::before {
+  content: "\e9b1";
+}
+.icon-upload::before {
+  content: "\e9b2";
+}
+.icon-video-back::before {
+  content: "\e9b3";
+}
+.icon-video-forward::before {
+  content: "\e9b4";
+}
+.icon-video-pause::before {
+  content: "\e9b5";
+}
+.icon-video-play::before {
+  content: "\e9b6";
+}
+.icon-video-stop::before {
+  content: "\e9b7";
+}
+.icon-view-list::before {
+  content: "\e9b8";
+}
+.icon-view-tiles::before {
+  content: "\e9b9";
+}
+.icon-volume-high::before {
+  content: "\e9ba";
+}
+.icon-volume-low::before {
+  content: "\e9bb";
+}
+.icon-volume-mute::before {
+  content: "\e9bc";
+}
+.icon-washer-fluid::before {
+  content: "\e9bd";
+}
+.icon-wifi::before {
+  content: "\e9be";
+}
+.icon-zoom-in::before {
+  content: "\e9bf";
+}
+.icon-zoom-out::before {
+  content: "\e9c0";
+}
+.light .tooltip {
+  position: relative;
+}
+.light .tooltip.dotted {
+  border-bottom: 1px dotted #242424;
+}
+.light .tooltip.pointer:hover {
+  cursor: pointer;
+}
+.light .tooltip:hover {
+  cursor: default;
+}
+.light .tooltip:hover .message {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.18s ease-in-out 0.18s;
+  transition: opacity 0.18s ease-in-out 0.18s;
+}
+.light .tooltip .message {
+  opacity: 0;
+  visibility: hidden;
+  background: #333333;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 0.7rem;
+  line-height: 16px;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+}
+.light .tooltip .message:hover {
+  opacity: 0;
+}
+.light .tooltip .message.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.light .tooltip .message.white {
+  background-color: #eee;
+  color: #242424;
+}
+.light .tooltip .message.white.bottom::after {
+  border-color: transparent transparent #eee;
+}
+.light .tooltip .message.white.bottom-end::after {
+  border-color: transparent transparent #eee;
+}
+.light .tooltip .message.white.top::after {
+  border-color: #eee transparent transparent;
+}
+.light .tooltip .message.white.top-end::after {
+  border-color: #eee transparent transparent;
+}
+.light .tooltip .message.white.left::after {
+  border-color: transparent transparent transparent #eee;
+}
+.light .tooltip .message.white.right::after {
+  border-color: transparent #eee transparent transparent;
+}
+.light .tooltip .message.blue {
+  background-color: #0082f0;
+  color: #fafafa;
+}
+.light .tooltip .message.blue.bottom::after {
+  border-color: transparent transparent #0082f0 transparent;
+}
+.light .tooltip .message.blue.bottom-end::after {
+  border-color: transparent transparent #0082f0 transparent;
+}
+.light .tooltip .message.blue.top::after {
+  border-color: #0082f0 transparent transparent transparent;
+}
+.light .tooltip .message.blue.top-end::after {
+  border-color: #0082f0 transparent transparent transparent;
+}
+.light .tooltip .message.blue.left::after {
+  border-color: transparent transparent transparent #0082f0;
+}
+.light .tooltip .message.blue.right::after {
+  border-color: transparent #0082f0 transparent transparent;
+}
+.light .tooltip .message.black {
+  background-color: #333;
+  color: #f2f2f2;
+}
+.light .tooltip .message.black.bottom::after {
+  border-color: transparent transparent #333;
+}
+.light .tooltip .message.black.bottom-end::after {
+  border-color: transparent transparent #333;
+}
+.light .tooltip .message.black.top::after {
+  border-color: #333 transparent transparent;
+}
+.light .tooltip .message.black.top-end::after {
+  border-color: #333 transparent transparent;
+}
+.light .tooltip .message.black.left::after {
+  border-color: transparent transparent transparent #333;
+}
+.light .tooltip .message.black.right::after {
+  border-color: transparent #333 transparent transparent;
+}
+.light .tooltip .message.bottom {
+  margin-top: 8px;
+  left: 0;
+}
+.light .tooltip .message.bottom::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 14px;
+  margin-top: -10px;
+  border: 5px solid transparent;
+  border-bottom-color: #333333;
+}
+.light .tooltip .message.bottom-end {
+  margin-top: 8px;
+  right: -10px;
+  top: 100%;
+}
+.light .tooltip .message.bottom-end::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 14px;
+  margin-top: -10px;
+  border: 5px solid transparent;
+  border-bottom-color: #333333;
+}
+.light .tooltip .message.top {
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 8px;
+}
+.light .tooltip .message.top::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-left: 14px;
+  border: 5px solid transparent;
+  border-top-color: #333333;
+}
+.light .tooltip .message.top-end {
+  bottom: 100%;
+  right: -10px;
+  margin-bottom: 8px;
+}
+.light .tooltip .message.top-end::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-right: 14px;
+  border: 5px solid transparent;
+  border-top-color: #333333;
+}
+.light .tooltip .message.right {
+  top: 0;
+  left: 105%;
+  margin-left: 8px;
+}
+.light .tooltip .message.right::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  margin-top: 1em;
+  border: 5px solid transparent;
+  border-right-color: #333333;
+}
+.light .tooltip .message.left {
+  top: 0;
+  right: 105%;
+  margin-right: 8px;
+}
+.light .tooltip .message.left::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: 1em;
+  border: 5px solid transparent;
+  border-left-color: #333333;
+}

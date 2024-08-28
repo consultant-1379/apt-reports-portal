@@ -1,0 +1,61 @@
+/////////////////////////////////////
+// Tabs
+/////////////////////////////////////
+@import (reference, multiple) "../variables/global";
+
+.tabs {
+  display: block;
+
+  .titles {
+    .title {
+      display: inline-block;
+      min-width: 25px;
+      // letter-spacing: .5pt;
+      font-size: 14px;
+      margin: 0;
+      padding: 10px @space-large;
+      text-align: center;
+      cursor: default;
+
+      &.disabled {
+        opacity: .4;
+        cursor: not-allowed;
+      }
+
+      &:only-child {
+        &.selected {
+          border-bottom: 3px solid transparent;
+          opacity: .7;
+          padding-left: 0;
+        }
+      }
+
+      &.selected {
+        border-bottom: 3px solid @blue;
+      }
+
+      &:not(.selected) {
+        color: @tabs-text;
+        border-bottom: solid 3px transparent;
+
+        &:hover {
+          color: @text;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .contents {
+    padding: 5px 0;
+
+    > .content {
+      display: none;
+      margin-top: @space-base;
+
+      &.selected {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+/////////////////////////////////////
+// Wizard - Footer
+/////////////////////////////////////
+@import (reference, multiple) "../../variables/global";
+
+.wizard-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: @space-large 0 0;
+  width: 100%;
+  border-top: solid 1px @wizard-footer-line;
+
+  .item {
+    .btn {
+      min-width: 42px;
+
+      .term {
+        display: none;
+      }
+
+      .icon {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media @tablet {
+  .wizard-footer {
+    .item {
+      .btn {
+        min-width: 98px;
+
+        .icon-arrow-right {
+          margin-left: 8px;
+        }
+
+        .icon-arrow-left {
+          margin-right: 8px;
+        }
+
+        .term {
+          display: inline;
+        }
+      }
+    }
+  }
+}

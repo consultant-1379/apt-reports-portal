@@ -1,0 +1,308 @@
+.dark .dropdown {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.dark .dropdown.more .btn {
+  border: none;
+  padding: 0;
+  margin-bottom: 0 !important;
+  min-width: 16px;
+  vertical-align: baseline;
+  outline: 0;
+}
+.dark .dropdown.more .btn::after {
+  content: none;
+  margin: 0;
+  padding: 0;
+}
+.dark .dropdown.more .btn:hover {
+  background: none;
+  color: #f2f2f2;
+}
+.dark .dropdown.more .btn:hover .icon {
+  color: #f2f2f2;
+}
+.dark .dropdown.more .btn .icon {
+  padding: 0;
+  margin: 0;
+  color: rgba(242, 242, 242, 0.7);
+  font-size: 16px;
+}
+.dark .dropdown.more .menu {
+  right: 0;
+  font-size: 14px;
+}
+.dark .dropdown.more .menu.start {
+  right: unset;
+  left: 0;
+}
+.dark .dropdown .btn::after {
+  content: "\e920";
+  padding-left: 8px;
+  font-family: "Ericsson Icons" !important;
+  vertical-align: middle;
+  line-height: 15px;
+}
+.dark .dropdown .btn:not(:disabled):not(.clickable):hover + .menu {
+  visibility: visible;
+}
+.dark .dropdown[data-type="multi"] .item input[type="checkbox"] {
+  position: fixed;
+}
+.dark .dropdown[data-type="combo"] {
+  width: inherit;
+}
+.dark .dropdown[data-type="combo"] .combo:not([disabled="true"]):active + .btn,
+.dark .dropdown[data-type="combo"] .combo:not([disabled="true"]):focus + .btn {
+  border-color: #33a3ff;
+}
+.dark .dropdown[data-type="combo"] .btn {
+  min-width: 32px;
+  height: 28px;
+  margin-left: -3px;
+  padding: 0;
+  border: 1px solid #4e4e4e;
+  background: #4e4e4e;
+  border-radius: 0 3px 3px 0;
+}
+.dark .dropdown[data-type="combo"] .btn.gradient {
+  border-left-color: #606060;
+}
+.dark .dropdown[data-type="combo"] .btn::after {
+  padding-left: 0;
+}
+.dark .dropdown[data-type="combo"] .btn:hover {
+  color: #181818;
+  text-decoration: none;
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+}
+.dark .dropdown[data-type="combo"] .menu {
+  width: 160px;
+}
+.dark .menu {
+  position: absolute;
+  z-index: 60;
+  visibility: hidden;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  width: 100%;
+  margin: 4px 0 0;
+  padding: 4px 0;
+  background: #1f1f1f;
+  border: solid 1px #4e4e4e;
+  text-align: left;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.dark .menu.right {
+  right: 0;
+  margin-right: 0;
+}
+.dark .menu .item:focus {
+  outline: none;
+}
+.dark .menu label {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+.dark .menu hr {
+  margin: 4px 0;
+  border-style: none;
+  border-top: 1px solid #353535;
+  border-bottom: 0;
+}
+.dark .menu.visible {
+  visibility: visible;
+}
+.dark .menu .item {
+  padding: 8px 8px 7px;
+  color: #f2f2f2;
+  line-height: 1.2em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.dark .menu .item:hover,
+.dark .menu .item.highlight {
+  color: #f2f2f2;
+  background: #4e4e4e;
+}
+.dark .menu .item:hover a,
+.dark .menu .item.highlight a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.dark .menu .item.selected {
+  border-bottom: solid 3px #0082f0;
+}
+.dark .menu .item.hidden {
+  display: none;
+}
+.dark .menu .empty {
+  display: none;
+  opacity: 0.6;
+  text-align: center;
+}
+.dark .menu .empty.visible {
+  display: block;
+  padding: 4px 0;
+}
+.light .dropdown {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.light .dropdown.more .btn {
+  border: none;
+  padding: 0;
+  margin-bottom: 0 !important;
+  min-width: 16px;
+  vertical-align: baseline;
+  outline: 0;
+}
+.light .dropdown.more .btn::after {
+  content: none;
+  margin: 0;
+  padding: 0;
+}
+.light .dropdown.more .btn:hover {
+  background: none;
+  color: #242424;
+}
+.light .dropdown.more .btn:hover .icon {
+  color: #242424;
+}
+.light .dropdown.more .btn .icon {
+  padding: 0;
+  margin: 0;
+  color: rgba(36, 36, 36, 0.7);
+  font-size: 16px;
+}
+.light .dropdown.more .menu {
+  right: 0;
+  font-size: 14px;
+}
+.light .dropdown.more .menu.start {
+  right: unset;
+  left: 0;
+}
+.light .dropdown .btn::after {
+  content: "\e920";
+  padding-left: 8px;
+  font-family: "Ericsson Icons" !important;
+  vertical-align: middle;
+  line-height: 15px;
+}
+.light .dropdown .btn:not(:disabled):not(.clickable):hover + .menu {
+  visibility: visible;
+}
+.light .dropdown[data-type="multi"] .item input[type="checkbox"] {
+  position: fixed;
+}
+.light .dropdown[data-type="combo"] {
+  width: inherit;
+}
+.light .dropdown[data-type="combo"] .combo:not([disabled="true"]):active + .btn,
+.light .dropdown[data-type="combo"] .combo:not([disabled="true"]):focus + .btn {
+  border-color: #0082f0;
+}
+.light .dropdown[data-type="combo"] .btn {
+  min-width: 32px;
+  height: 28px;
+  margin-left: -3px;
+  padding: 0;
+  border: 1px solid #c8c8c8;
+  background: #c8c8c8;
+  border-radius: 0 3px 3px 0;
+}
+.light .dropdown[data-type="combo"] .btn.gradient {
+  border-left-color: #cecece;
+}
+.light .dropdown[data-type="combo"] .btn::after {
+  padding-left: 0;
+}
+.light .dropdown[data-type="combo"] .btn:hover {
+  color: #e0e0e0;
+  text-decoration: none;
+  background: #4e4e4e;
+  border: 1px solid #4e4e4e;
+  cursor: pointer;
+}
+.light .dropdown[data-type="combo"] .menu {
+  width: 160px;
+}
+.light .menu {
+  position: absolute;
+  z-index: 60;
+  visibility: hidden;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  width: 100%;
+  margin: 4px 0 0;
+  padding: 4px 0;
+  background: #fafafa;
+  border: solid 1px #c8c8c8;
+  text-align: left;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.light .menu.right {
+  right: 0;
+  margin-right: 0;
+}
+.light .menu .item:focus {
+  outline: none;
+}
+.light .menu label {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+.light .menu hr {
+  margin: 4px 0;
+  border-style: none;
+  border-top: 1px solid #dadada;
+  border-bottom: 0;
+}
+.light .menu.visible {
+  visibility: visible;
+}
+.light .menu .item {
+  padding: 8px 8px 7px;
+  color: #242424;
+  line-height: 1.2em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.light .menu .item:hover,
+.light .menu .item.highlight {
+  color: #242424;
+  background: #dcdcdc;
+}
+.light .menu .item:hover a,
+.light .menu .item.highlight a {
+  color: #242424;
+  text-decoration: none;
+}
+.light .menu .item.selected {
+  border-bottom: solid 3px #0082f0;
+}
+.light .menu .item.hidden {
+  display: none;
+}
+.light .menu .empty {
+  display: none;
+  opacity: 0.6;
+  text-align: center;
+}
+.light .menu .empty.visible {
+  display: block;
+  padding: 4px 0;
+}

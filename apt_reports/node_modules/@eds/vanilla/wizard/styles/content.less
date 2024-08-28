@@ -1,0 +1,41 @@
+/////////////////////////////////////
+// Wizard - Content
+/////////////////////////////////////
+@import (reference, multiple) "../../variables/global";
+
+.wizard-content {
+  margin: @space-xl 0;
+  flex: 1;
+  overflow-y: auto;
+  height: 100px;
+
+  .content {
+    margin-bottom: @space-large;
+
+    &.hidden {
+      display: none;
+    }
+
+    .title {
+      display: inline-block;
+      font-size: 16px;
+      margin-bottom: @space-large;
+    }
+
+    .subtitle {
+      display: inline-block;
+      font-size: 12px;
+      opacity: .6;
+      margin-left: @space-base;
+    }
+
+    .column {
+      padding: @space-base 0;
+      margin-bottom: 0;
+    }
+
+    .notes {
+      opacity: .8;
+    }
+  }
+}

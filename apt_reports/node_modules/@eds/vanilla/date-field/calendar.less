@@ -1,0 +1,109 @@
+/////////////////////////////////////
+// Calendar
+/////////////////////////////////////
+@import (reference, multiple) "../variables/global";
+
+.calendar {
+  position: absolute;
+  z-index: 2;
+  width: 260px;
+  // height: 260px;
+  padding: @space-base;
+  background: @calendar-background;
+  border: 1px solid @input-border;
+  // border-radius: 3px;
+
+  &.opened {
+    display: block;
+  }
+
+  &.closed {
+    display: none;
+  }
+
+  .head {
+    padding: @space-base 0;
+    font-size: 16px;
+    font-weight: @weight-bold;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+
+    i {
+      opacity: .7;
+      flex: 1;
+
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+
+    i:nth-child(1),
+    i:nth-child(2) {
+      float: left;
+    }
+
+    i:nth-child(5),
+    i:nth-child(6) {
+      float: right;
+    }
+  }
+
+  table.body {
+    width: 100%;
+    // Whitespace fix
+    // margin-bottom: -4px;
+    table-layout: fixed;
+    padding: 0 @space-base;
+
+    thead tr {
+      color: @gray;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    tbody tr {
+      text-align: center;
+      line-height: 2.1em;
+
+      td {
+        // border-radius: 3px;
+
+        &.selected {
+          color: white;
+          background: @blue;
+
+          &:hover {
+            background: @blue;
+          }
+
+          .today {
+            color: white;
+            border-bottom-color: white;
+          }
+        }
+
+        &.dummy {
+          &:hover {
+            background: none;
+            cursor: default;
+          }
+        }
+
+        .today {
+          border-bottom: solid 2px @blue;
+          font-size: 1.1em;
+          font-weight: @weight-bold;
+          padding: 1px 4px;
+        }
+
+        &:hover {
+          background: @table-hover;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.eds- {
+  &gauge {
+    text-align: center;
+
+    .title {
+      font-size: 16px;
+      fill: @text;
+      opacity: .7;
+    }
+
+    .total {
+      font-size: 60px;
+      fill: @text;
+      text-anchor: middle;
+
+      &.light {
+        font-weight: 100;
+      }
+    }
+
+    .units {
+      font-size: 28px;
+      fill: @text;
+      text-anchor: middle;
+      opacity: .6;
+    }
+
+    .label {
+      font-size: 24px;
+      fill: @text;
+      opacity: .3;
+
+      &.left {
+        text-anchor: start;
+      }
+
+      &.right {
+        text-anchor: end;
+      }
+    }
+
+    .foregroundArc {
+      fill: @gauge-foreground;
+    }
+
+    .valueArc {
+      fill: @gauge-value;
+    }
+
+    .red {
+      fill: @red;
+    }
+
+    .orange {
+      fill: @orange;
+    }
+
+    .yellow {
+      fill: @yellow;
+    }
+
+    .green {
+      fill: @green;
+    }
+
+    .gray {
+      fill: @gray;
+    }
+
+    .transparent {
+      fill: transparent;
+    }
+
+    .unknown {
+      fill: url(#diagonalTexture);
+    }
+
+    .unknown2 {
+      fill: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==);
+    }
+
+    .negativeArc {
+      fill: @gauge-background;
+    }
+
+    .tooltip {
+      font-family: "Ericsson Hilda", Helvetica, Arial, sans-serif;
+      color: @white;
+      background: rgba(57, 57, 57, .9);
+      border-radius: 4px;
+      position: fixed;
+      padding: .5em 1em;
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+}

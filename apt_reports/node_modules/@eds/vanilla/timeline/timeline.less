@@ -1,0 +1,48 @@
+/////////////////////////////////////
+// Timeline
+/////////////////////////////////////
+@import (reference, multiple) "../variables/global";
+
+.timeline {
+  ul {
+    border-left: solid 1px @gray;
+    margin-left: 8px;
+  }
+
+  li {
+    list-style-type: none;
+    margin-left: -21.4px;
+
+    &::before {
+      content: @icon-alarm-level3;
+      font-family: "Ericsson Icons" !important;
+      margin-left: -26px;
+      display: inline-block;
+      vertical-align: middle;
+      color: @gray;
+    }
+
+    &:hover {
+      &::before {
+        color: @text;
+      }
+
+      .timestamp {
+        color: @text !important;
+      }
+    }
+  }
+
+  .timestamp {
+    color: @gray;
+    display: inline-block;
+    font-size: .8em;
+    font-family: "Ericsson Hilda Mono";
+  }
+
+  .event {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
